@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LifeFlow — Blood Donation Management System</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-logo">Life<span>Flow</span></div>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#flow">How It Works</a>
+    <a href="#inventory">Inventory</a>
+    <a href="#roles">Roles</a>
+    <a href="#tech">Tech</a>
+    <a href="#cta" class="nav-cta">Donate Now</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-circle hc1"></div>
+    <div class="hero-circle hc2"></div>
+  </div>
+  <div class="hero-left">
+    <div class="hero-tag">Blood Donation Management System</div>
+    <h1 class="hero-h1">
+      SAVE<br>
+      <em>LIVES</em><br>
+      WITH DATA
+    </h1>
+    <p class="hero-sub">A complete blood donation management system connecting donors, hospitals, and blood banks — in real time.</p>
+    <div class="hero-actions">
+      <a href="#flow" class="btn-primary">▶ See How It Works</a>
+      <a href="#features" class="btn-ghost">Explore Features</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">4<span>+</span></div>
+        <div class="stat-label">Blood Groups</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3<span>+</span></div>
+        <div class="stat-label">User Roles</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Lives Saved</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dashboard Mockup -->
+  <div class="hero-right">
+    <div class="dashboard-mockup">
+      <div class="mock-header">
+        <div class="mock-dot" style="background:#FF5F56"></div>
+        <div class="mock-dot" style="background:#FFBD2E"></div>
+        <div class="mock-dot" style="background:#27C93F"></div>
+        <div class="mock-title">lifeflow / admin-dashboard</div>
+      </div>
+      <div class="mock-body">
+        <div class="mock-row">
+          <div class="mock-card">
+            <div class="mock-card-label">Total Donors</div>
+            <div class="mock-card-val">2,847</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-label">Units Available</div>
+            <div class="mock-card-val red">1,203</div>
+          </div>
+        </div>
+        <div class="mock-row">
+          <div class="mock-card">
+            <div class="mock-card-label">Requests Today</div>
+            <div class="mock-card-val">18</div>
+          </div>
+          <div class="mock-card">
+            <div class="mock-card-label">Fulfilled</div>
+            <div class="mock-card-val green">15</div>
+          </div>
+        </div>
+        <div class="mock-section-title">Blood Inventory</div>
+        <div class="mock-blood-list">
+          <div class="mock-blood-item">
+            <span class="mock-blood-type">A+</span>
+            <div class="mock-blood-bar-wrap"><div class="mock-blood-bar" style="width:75%"></div></div>
+            <span class="mock-blood-units">312u</span>
+          </div>
+          <div class="mock-blood-item">
+            <span class="mock-blood-type">O-</span>
+            <div class="mock-blood-bar-wrap"><div class="mock-blood-bar" style="width:28%;background:#F24444"></div></div>
+            <span class="mock-blood-units">89u</span>
+          </div>
+          <div class="mock-blood-item">
+            <span class="mock-blood-type">B+</span>
+            <div class="mock-blood-bar-wrap"><div class="mock-blood-bar" style="width:55%"></div></div>
+            <span class="mock-blood-units">201u</span>
+          </div>
+          <div class="mock-blood-item">
+            <span class="mock-blood-type">AB+</span>
+            <div class="mock-blood-bar-wrap"><div class="mock-blood-bar" style="width:90%"></div></div>
+            <span class="mock-blood-units">180u</span>
+          </div>
+        </div>
+        <div class="mock-section-title">Recent Activity</div>
+        <div class="mock-activity">
+          <div class="mock-act-item">
+            <div class="mock-act-dot" style="background:#4CAF50"></div>
+            <span class="mock-act-text">New donor registered — A+ type</span>
+            <span class="mock-act-time">2m ago</span>
+          </div>
+          <div class="mock-act-item">
+            <div class="mock-act-dot" style="background:#F5C842"></div>
+            <span class="mock-act-text">Blood request fulfilled — City Hospital</span>
+            <span class="mock-act-time">8m ago</span>
+          </div>
+          <div class="mock-act-item">
+            <div class="mock-act-dot" style="background:#D92B2B"></div>
+            <span class="mock-act-text">O- inventory critically low</span>
+            <span class="mock-act-time">14m ago</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features">
+  <div class="section-eyebrow">Core Capabilities</div>
+  <h2 class="section-title">FEATURES THAT <span>MATTER</span></h2>
+  <p class="section-desc">Everything needed to run a blood bank — from donor registration to emergency dispatch.</p>
+  <div class="features-grid reveal">
+    <div class="feature-card">
+      <div class="feature-icon">🩸</div>
+      <h3>Donor Registration</h3>
+      <p>Complete donor profiles with blood type, medical history, contact info, and last donation date tracking for eligibility checks.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🏥</div>
+      <h3>Hospital Requests</h3>
+      <p>Hospitals can submit urgent blood requests specifying type, quantity, and urgency. Automated matching with available inventory.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📦</div>
+      <h3>Inventory Management</h3>
+      <p>Real-time tracking of blood units by type and expiry date. Automated alerts for critically low stock and expiring units.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔔</div>
+      <h3>Smart Notifications</h3>
+      <p>Instant alerts to eligible donors during shortage emergencies. Automated appointment reminders and donation certificates.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">📊</div>
+      <h3>Analytics Dashboard</h3>
+      <p>Visual insights on donation trends, blood type distribution, request fulfillment rates, and monthly reports for administrators.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔐</div>
+      <h3>Role-Based Access</h3>
+      <p>Separate secure portals for donors, hospital staff, and admins with appropriate data visibility and action permissions.</p>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section id="flow">
+  <div class="section-eyebrow">The Process</div>
+  <h2 class="section-title">HOW IT <span>WORKS</span></h2>
+  <p class="section-desc">A streamlined flow from donor registration to blood delivery — automated and transparent.</p>
+  <div class="flow-container">
+    <div class="flow-steps reveal">
+      <div class="flow-step">
+        <div class="flow-num">01</div>
+        <div class="flow-content">
+          <h3>Donor Registers & Gets Screened</h3>
+          <p>A donor signs up with personal details and blood type. The system checks eligibility based on age, weight, last donation date, and health conditions before approving them.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">02</div>
+        <div class="flow-content">
+          <h3>Blood is Donated & Processed</h3>
+          <p>Approved donors schedule an appointment. Post-donation, the blood is logged into inventory with a unique unit ID, blood type, quantity, and expiry date.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">03</div>
+        <div class="flow-content">
+          <h3>Hospital Submits a Request</h3>
+          <p>A hospital or patient creates a blood request with blood type, quantity needed, and urgency level. The system scans inventory in real time for matching units.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">04</div>
+        <div class="flow-content">
+          <h3>Admin Reviews & Approves</h3>
+          <p>The blood bank administrator reviews the request, confirms available inventory, and dispatches the units. The system updates stock automatically.</p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-num">05</div>
+        <div class="flow-content">
+          <h3>Blood Delivered, Life Saved</h3>
+          <p>The hospital receives confirmation and the blood units. Transaction history is logged for audit. Donors are notified their contribution made a difference.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Inventory -->
+<section id="inventory">
+  <div class="section-eyebrow">Live Inventory Demo</div>
+  <h2 class="section-title">BLOOD <span>INVENTORY</span></h2>
+  <p class="section-desc">Real-time stock levels across all blood types with visual status indicators and automated low-stock alerts.</p>
+  <div class="blood-grid reveal">
+    <div class="blood-card">
+      <div class="blood-card-type">A+</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:78%"></div></div>
+      <div class="blood-card-units">312 units</div>
+      <div class="blood-card-status status-ok">● Available</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">A−</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:40%"></div></div>
+      <div class="blood-card-units">98 units</div>
+      <div class="blood-card-status status-low">● Low</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">B+</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:60%"></div></div>
+      <div class="blood-card-units">201 units</div>
+      <div class="blood-card-status status-ok">● Available</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">B−</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:18%"></div></div>
+      <div class="blood-card-units">44 units</div>
+      <div class="blood-card-status status-critical">● Critical</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">O+</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:88%"></div></div>
+      <div class="blood-card-units">380 units</div>
+      <div class="blood-card-status status-ok">● Available</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">O−</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:22%"></div></div>
+      <div class="blood-card-units">89 units</div>
+      <div class="blood-card-status status-critical">● Critical</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">AB+</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:95%"></div></div>
+      <div class="blood-card-units">180 units</div>
+      <div class="blood-card-status status-ok">● Available</div>
+    </div>
+    <div class="blood-card">
+      <div class="blood-card-type">AB−</div>
+      <div class="blood-card-bar"><div class="blood-card-bar-fill" style="width:35%"></div></div>
+      <div class="blood-card-units">61 units</div>
+      <div class="blood-card-status status-low">● Low</div>
+    </div>
+  </div>
+</section>
+
+<!-- Roles -->
+<section id="roles">
+  <div class="section-eyebrow">User Portals</div>
+  <h2 class="section-title">THREE <span>ROLES</span></h2>
+  <p class="section-desc">Dedicated interfaces tailored to each stakeholder — with exactly the access they need.</p>
+  <div class="roles-grid reveal">
+    <div class="role-card">
+      <div class="role-icon">🧑‍🤝‍🧑</div>
+      <h3>Donor</h3>
+      <div class="role-feature">Register & manage profile</div>
+      <div class="role-feature">Check donation eligibility</div>
+      <div class="role-feature">Schedule appointments</div>
+      <div class="role-feature">View donation history</div>
+      <div class="role-feature">Download certificates</div>
+      <div class="role-feature">Receive emergency alerts</div>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">🏥</div>
+      <h3>Hospital Staff</h3>
+      <div class="role-feature">Submit blood requests</div>
+      <div class="role-feature">Track request status</div>
+      <div class="role-feature">Search blood availability</div>
+      <div class="role-feature">View fulfillment history</div>
+      <div class="role-feature">Set urgency priority</div>
+      <div class="role-feature">Receive dispatch alerts</div>
+    </div>
+    <div class="role-card">
+      <div class="role-icon">⚙️</div>
+      <h3>Admin</h3>
+      <div class="role-feature">Manage all user accounts</div>
+      <div class="role-feature">Approve/reject requests</div>
+      <div class="role-feature">Update inventory manually</div>
+      <div class="role-feature">Generate reports</div>
+      <div class="role-feature">Monitor analytics dashboard</div>
+      <div class="role-feature">Configure system alerts</div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<section id="tech">
+  <div class="section-eyebrow">Built With</div>
+  <h2 class="section-title">TECH <span>STACK</span></h2>
+  <p class="section-desc">Reliable, battle-tested technologies chosen for scalability and rapid development.</p>
+  <div class="tech-grid reveal">
+    <div class="tech-pill"><span class="tech-pill-dot"></span>HTML5 / CSS3</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>JavaScript (ES6+)</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>PHP 8.x</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>MySQL</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Bootstrap 5</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>AJAX / Fetch API</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Apache / XAMPP</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Session Auth</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Chart.js</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Email Notifications</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>PDO / MySQLi</div>
+    <div class="tech-pill"><span class="tech-pill-dot"></span>Responsive Design</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta">
+  <div class="section-eyebrow">Make a Difference</div>
+  <h2 class="section-title">EVERY DROP<br>COUNTS</h2>
+  <p class="section-desc">This system was built to bridge the gap between willing donors and urgent patients. Technology in service of humanity.</p>
+  <a href="#home" class="btn-primary">↑ Back to Top</a>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">Life<span>Flow</span></div>
+  <div class="footer-meta">Blood Donation Management System</div>
+  <div class="footer-tag">v1.0.0</div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
